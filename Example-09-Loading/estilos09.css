@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+}
+
+.caja{
+    color: white;
+    font-size: 80px;
+    letter-spacing: 5px;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.1));
+}
+
+.caja span{
+    position: relative;    
+    animation: wavy 2s ease-in-out infinite ;   
+    animation-delay: calc(0.1s * var(--i)); 
+}
+
+@keyframes wavy{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    50%{
+        top: -40px;
+        left: 20px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{ 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    line-height: 300px;
+    background-color: #f1f1f1;
+}
+
+#texto{    
+    position: relative;   
+    margin-top: -125px;
+    margin-left: -250px;
+    color: #ffffff;
+    font-size: 12em;
+    font-weight: bold;
+    transform: rotate(-28deg) skew(25deg);
+    letter-spacing: 8px;
+}
+
+#texto::before{
+    position: absolute;
+    content: attr(data-text);
+    font-size: 190px;
+    top: 30px;
+    left: -30px;
+    color: #85848498;
+    filter: blur(8px);
+    z-index: -1;
+}
